@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book | Lustre Cork</title>
+  <meta name="description" content="Book car detailing at Lustre Cork." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="index.html" class="logo">Lustre <em>Cork</em></a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Packages</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">Studio</a></li>
+          <li><a href="contact.html">Book</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+353215550190" class="btn btn-line">Call</a>
+        <a href="contact.html" class="btn btn-accent">Book</a>
+      </div>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+    <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Book</p>
+        <h1>Request a slot</h1>
+        <p>Tell us the car and package. We’ll reply with times and a confirmed price.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap contact-grid">
+        <aside class="contact-aside">
+          <h2>Studio</h2>
+          <p>Appointments Tuesday to Saturday. Drop-off window agreed when you book.</p>
+          <div class="detail">
+            <strong>Phone</strong>
+            <a href="tel:+353215550190" data-cfg="phone">+353 21 555 0190</a>
+          </div>
+          <div class="detail">
+            <strong>Email</strong>
+            <a href="mailto:book@lustre.ie" data-cfg="email">book@lustre.ie</a>
+          </div>
+          <div class="detail">
+            <strong>Hours</strong>
+            <span data-cfg="hours">Tue–Sat 9:00–18:00</span>
+          </div>
+        </aside>
+        <div class="form-panel">
+          <h2>Booking request</h2>
+          <form id="bookForm">
+            <div class="form-grid two">
+              <div class="field">
+                <label for="name">Name *</label>
+                <input id="name" name="name" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone *</label>
+                <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-grid two">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="vehicle">Vehicle</label>
+                <input id="vehicle" name="vehicle" placeholder="e.g. Golf R, black" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="package">Package *</label>
+              <select id="package" name="package" required>
+                <option value="">Select…</option>
+                <option value="refresh">Refresh</option>
+                <option value="enhance">Enhance</option>
+                <option value="correct">Correct &amp; coat</option>
+                <option value="interior">Interior only</option>
+                <option value="maintenance">Maintenance</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Notes</label>
+              <textarea id="message" name="message" rows="4" placeholder="Preferred days, issues on the paint…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent btn-block">Send request</button>
+          </form>
+          <div class="form-ok" id="bookFormOk">Thanks — we’ll confirm times shortly.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-cta">
+    <a class="btn btn-line-light" href="tel:+353215550190">Call</a>
+    <a class="btn btn-light" href="contact.html">Book</a>
+  </div>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Lustre <em style="color:var(--chrome)">Cork</em></a>
+        <p>Car detailing studio in Cork — paint correction, ceramic coating, and finishes that hold up to Irish weather.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigate</h3>
+        <a href="services.html">Packages</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">Studio</a>
+        <a href="contact.html">Book</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="tel:+353215550190" data-cfg="phone">+353 21 555 0190</a>
+        <a href="mailto:book@lustre.ie" data-cfg="email">book@lustre.ie</a>
+        <span data-cfg="hours">Tue–Sat 9:00–18:00</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">&copy; <span data-cfg="year"></span> Lustre Cork</div>
+    </div>
+  </footer>
+  <script src="./app.js" defer></script>
+</body>
+</html>
